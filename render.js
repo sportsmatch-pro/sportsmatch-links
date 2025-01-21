@@ -14,9 +14,23 @@ function renderContent (content) {
         } else if (item.type === "list") {
             const ul = document.createElement("ul");
             item.texts.forEach((text) => {
-                const li = document.createElement("li");
-                li.textContent = text;
-                ul.appendChild(li);
+                // Check if is an array
+                if (text instanceof Array) {
+                    const li = document.createElement("li");
+                    const ul2 = document.createElement("ul");
+                    text.forEach((text2) => {
+                        const li2 = document.createElement("li");
+                        li2.textContent = text2;
+                        ul2.appendChild(li2);
+                    });
+                    li.appendChild(ul2);
+                    ul.appendChild(li);
+
+                } else {
+                    const li = document.createElement("li");
+                    li.textContent = text;
+                    ul.appendChild(li);
+                }
             });
             container.appendChild(ul);
         }
