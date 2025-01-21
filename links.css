@@ -1,0 +1,144 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 3vw;
+}
+
+.logo {
+    padding: 3vw;
+    text-align: center;
+}
+
+.logo svg {
+    width: 40vw;
+    aspect-ratio: 179 / 43;
+}
+
+.container {
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+    overflow: hidden;
+    padding: 3vw;
+}
+
+/* Títol principal */
+h1 {
+    font-size: 3vw;
+    color: #6C757D;
+    text-align: center;
+    margin-bottom: 3vw;
+    padding-bottom: 1.5vw;
+}
+
+/* Subtítols */
+h2, h3 {
+    color: #6C757D;
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+/* Paràgrafs */
+p {
+    font-size: 1vw;
+    margin-bottom: 2vw;
+    text-align: justify;
+}
+
+/* Llistes */
+ul, ol {
+    margin: 1.5vw 0 3vw 3vw;
+    padding-left: 3vw;
+}
+
+ul li, ol li {
+    margin-bottom: 1vw;
+    list-style: disc;
+}
+
+li {
+    font-size: 1vw;
+}
+
+/* Enllaços */
+a {
+    color: #6C757D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Taules (si en necessites més endavant) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3vw 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 1vw;
+    text-align: left;
+}
+
+table th {
+    background-color: #6C757D;
+    color: white;
+}
+
+/* Enfatitzar contingut */
+strong, b {
+    color: #6C757D;
+}
+
+em {
+    font-style: italic;
+}
+
+.footer {
+    padding: 3vw;
+    text-align: center;
+    color: #6C757D;
+    font-size: 2vw;
+}
+/* Responsiu */
+@media (max-width: 761vw) {
+
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    h3 {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 3vw;
+    }
+
+    li {
+        font-size: 3vw;
+    }
+    .footer {
+        font-size: 3vw;
+    }
+}
