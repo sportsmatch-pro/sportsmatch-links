@@ -1,0 +1,35 @@
+{
+    "language": "es_ES",
+    "title": "Información sobre las promociones de publicaciones",
+    "url": "https://links.sportsmatch.es/promotedposts.html",
+    "content": [
+        {
+            "type": "h1",
+            "text": "Información sobre las promociones de publicaciones"
+        },
+        {
+            "type": "p",
+            "text": "SPORTSMATCH permite promocionar contenidos a los usuarios. Si configuras una promoción de un contenido, puedes escoger entre tres tipologías de promoción según la duración y el presupuesto:"
+        },
+        {
+            "type": "list",
+            "text": [
+                "2 días de promoción con un presupuesto de 5€",
+                "5 días de promoción con un presupuesto de 10€",
+                "10 días de promoción con un presupuesto de 20€"
+            ]
+        },
+        {
+            "type": "p",
+            "text": "Los precios de las promociones pueden variar en función de la demanda y la disponibilidad de promociones."
+        },
+        {
+            "type": "p",
+            "text": "El objetivo de la promoción es obtener más visitas en el perfil. Cuando se realiza una promoción el contenido se destaca en la página de buscar y aparece como promoción en el feed de seguimiento de los usuarios de tu deporte."
+        },
+        {
+            "type": "p",
+            "text": "Una vez concluida la promoción puedes revisar y analitzar los resultados obtenidos y retorno de la promoción."
+        }
+    ]
+}
