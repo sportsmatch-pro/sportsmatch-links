@@ -6,7 +6,8 @@ function renderContent (content) {
             item.type === "p" ||
             item.type === "h1" ||
             item.type === "h2" ||
-            item.type === "h3"
+            item.type === "h3" ||
+            item.type === "html"
         ) {
             const element = document.createElement(item.type);
             element.innerHTML = item.text;
