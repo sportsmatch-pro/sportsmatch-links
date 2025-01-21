@@ -23,8 +23,8 @@ function renderContent (content) {
     });
 }
 
-function loadJSON (folder, filename) {
-    fetch(`/${folder}/${filename}.json`)
+function loadJSON (filename, locale) {
+    fetch(`/${locale}/${filename}.json`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
