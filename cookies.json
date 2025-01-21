@@ -4,6 +4,10 @@
     "url": "https://links.sportsmatch.es/cookies.html",
     "content": [
         {
+            "type": "h1",
+            "text": "Política de cookies"
+        },
+        {
             "type": "p",
             "text": "FERSUTER SL informa acerca del uso de las cookies en su plataforma SPORTSMATCH."
         },
@@ -28,12 +32,11 @@
             "text": "Según quien sea la entidad que gestione el dominio desde donde se envían las cookies y trate los datos que se obtengan se pueden distinguir dos tipos:"
         },
         {
-            "type": "li",
-            "text": "Cookies propias: aquellas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario."
-        },
-        {
-            "type": "li",
-            "text": "Cookies de terceros: aquellas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos través de las cookies."
+            "type": "list",
+            "texts": [
+                "Cookies propias: aquellas que se envían al equipo terminal del usuario desde un equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario.",
+                "Cookies de terceros: aquellas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos través de las cookies."
+            ]
         },
         {
             "type": "p",
