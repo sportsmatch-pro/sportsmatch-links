@@ -79,48 +79,10 @@
       </div>
       <div id="content"></div>
     </div>
+
+    <script src="render.js"></script>
     <script>
-      // Seleccionem el contenidor on escriurem el contingut
-      const container = document.getElementById("content");
-
-      // Funció per crear elements HTML a partir del JSON
-      function renderContent(content) {
-        content.forEach((item) => {
-          if (
-            item.type === "p" ||
-            item.type === "h1" ||
-            item.type === "h2" ||
-            item.type === "h3"
-          ) {
-            const element = document.createElement(item.type);
-            element.textContent = item.text;
-            container.appendChild(element);
-          } else if (item.type === "list") {
-            const ul = document.createElement("ul");
-            item.texts.forEach((text) => {
-              const li = document.createElement("li");
-              li.textContent = text;
-              ul.appendChild(li);
-            });
-            container.appendChild(ul);
-          }
-        });
-      }
-
-      fetch("./privacity.json")
-        .then((response) => {
-          if (!response.ok) {
-            throw new Error("No s'ha pogut carregar el fitxer JSON.");
-          }
-          return response.json();
-        })
-        .then((data) => {
-          document.title = data.title + "SportsMatch.pro";
-          renderContent(data.content);
-        })
-        .catch((error) => {
-          console.error("Error carregant el JSON:", error);
-        });
+      loadJSON("privacity", "es_ES");
     </script>
     <div class="footer">©2024. SPORTSMATCH. All rights reserved</div>
   </body>
