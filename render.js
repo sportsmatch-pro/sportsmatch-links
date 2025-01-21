@@ -9,7 +9,7 @@ function renderContent (content) {
             item.type === "h3"
         ) {
             const element = document.createElement(item.type);
-            element.textContent = item.text;
+            element.innerHTML = item.text;
             container.appendChild(element);
         } else if (item.type === "list") {
             const ul = document.createElement("ul");
@@ -19,13 +19,13 @@ function renderContent (content) {
                     const nestedUl = document.createElement("ul");
                     text.forEach((nestedText) => {
                         const nestedLi = document.createElement("li");
-                        nestedLi.textContent = nestedText;
+                        nestedLi.innerHTML = nestedText;
                         nestedUl.appendChild(nestedLi);
                     });
                     li.appendChild(nestedUl);
 
                 } else {
-                    li.textContent = text;
+                    li.innerHTML = text;
                 }
                 ul.appendChild(li);
             });
