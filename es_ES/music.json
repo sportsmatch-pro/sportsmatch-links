@@ -53,7 +53,7 @@
         },
         {
             "type": "list",
-            "text": [
+            "texts": [
                 "Cuanto mayor sea la cantidad de música en el contenido, más probabilidad habrá de que se limite (por ejemplo, se bloquee, se silencie o no sea elegible para recibir un porcentaje de los ingresos por música).",
                 "Se recomiendan clips de música más cortos.",
                 "Siempre debe haber un componente visual en el contenido; el audio grabado no debe ser el objetivo principal."
