@@ -143,29 +143,19 @@ em {
     }
 }
 
-.light .logo,
-.light .footer,
-.dark .logo,
-.dark .footer {
+.embed .logo,
+.embed .footer {
     display: none;
 }
 
-.dark {
+.embed {
     color: #c6c6c6;
     background-color: black;
     
-    
-    .container {
-        background: #1d1d1d;
-        box-shadow: none;
-    }
-    
-    /* Títol principal */
     h1 {
         color: white;
     }
-    
-    /* Subtítols */
+
     h2, h3 {
         color: white;
     }
@@ -174,8 +164,6 @@ em {
         border-bottom: 1px solid #252525;
     }
     
-    
-    
     table th, table td {
         border: 1px solid #252525;
     }
@@ -183,5 +171,4 @@ em {
     strong, b {
         color: white;
     }
-    
 }
