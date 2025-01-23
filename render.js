@@ -44,6 +44,8 @@ function loadJSON (filename, locale) {
             return response.json();
         })
         .then((data) => {
+            const body = document.getElementsByTagName("body")[0];
+            body.classList.add(new URLSearchParams(window.location.search).get("theme") || "light");
             document.title = data.title + "SportsMatch.pro";
             renderContent(data.content);
         })

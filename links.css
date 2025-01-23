@@ -79,6 +79,7 @@ li {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #e1451e;
 }
 
 a:hover {
@@ -139,5 +140,51 @@ em {
     }
     .footer {
         font-size: 3vw;
+    }
+}
+
+.dark {
+    body {
+        color: white;
+        background-color: black;
+    }
+    
+    .container {
+        background: #1d1d1d;
+        box-shadow: none;
+    }
+    
+    /* Títol principal */
+    h1 {
+        color: #6C757D;
+    }
+    
+    /* Subtítols */
+    h2, h3 {
+        color: #6C757D;
+    }
+    
+    h2 {
+        border-bottom: 1px solid #252525;
+    }
+    
+    
+    
+    table th, table td {
+        border: 1px solid #252525;
+    }
+    
+    table th {
+        background-color: #6C757D;
+        color: white;
+    }
+    
+    strong, b {
+        color: #6C757D;
+    }
+    
+    
+    .footer {
+        color: #6C757D;
     }
 }
