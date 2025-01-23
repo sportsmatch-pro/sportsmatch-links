@@ -143,6 +143,13 @@ em {
     }
 }
 
+.llight,
+.dark {
+    .logo {
+        display: none;
+    }
+}
+
 .dark {
     body {
         color: white;
