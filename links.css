@@ -143,18 +143,15 @@ em {
     }
 }
 
-.llight,
-.dark {
-    .logo {
-        display: none;
-    }
+.light .logo,
+.dark .logo {
+    display: none;
 }
 
 .dark {
-    body {
-        color: white;
-        background-color: black;
-    }
+    color: white;
+    background-color: black;
+    
     
     .container {
         background: #1d1d1d;
