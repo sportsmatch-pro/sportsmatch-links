@@ -144,7 +144,9 @@ em {
 }
 
 .light .logo,
-.dark .logo {
+.light .footer,
+.dark .logo,
+.dark .footer {
     display: none;
 }
 
@@ -160,12 +162,12 @@ em {
     
     /* Títol principal */
     h1 {
-        color: #6C757D;
+        color: #c6c6c6;
     }
     
     /* Subtítols */
     h2, h3 {
-        color: #6C757D;
+        color: #c6c6c6;
     }
     
     h2 {
@@ -179,16 +181,12 @@ em {
     }
     
     table th {
-        background-color: #6C757D;
+        background-color: #c6c6c6;
         color: white;
     }
     
     strong, b {
-        color: #6C757D;
+        color: white;
     }
     
-    
-    .footer {
-        color: #6C757D;
-    }
 }
