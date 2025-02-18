@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = `
         <nav>
             <ul>
-                <li><a href="termofuse?lang=${getLanguage()}" data-translate="termofuse_title">termofuse</a></li>
+                <li><a href="termsofuse?lang=${getLanguage()}" data-translate="termsofuse_title">termsofuse</a></li>
                 <li><a href="comunity.html?lang=${getLanguage()}" data-translate="comunity_title">comunity</a></li>
                 <li><a href="content.html?lang=${getLanguage()}" data-translate="content_title">content</a></li>
                 <li><a href="brand.html?lang=${getLanguage()}" data-translate="brand_title">brand</a></li>

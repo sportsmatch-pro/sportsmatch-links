@@ -21,7 +21,7 @@ function loadTranslations (lang) {
         .then(translations => {
             document.querySelectorAll("[data-translate]").forEach(el => {
                 const key = el.getAttribute("data-translate");
-                el.textContent = translations[key] || key;
+                el.el.innerHTML = translations[key] || key;
             });
         });
 }
