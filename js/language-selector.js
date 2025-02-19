@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         languageSelector.id = "languageSelector";
         languageSelector.innerHTML = `
             <option value="es-ES">Español</option>
-            <option value="en-US">English</option>
+            <option value="en-GB">English</option>
             <option value="ca-ES">Català</option>
         `;
 

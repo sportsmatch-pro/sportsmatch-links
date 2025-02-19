@@ -1,23 +1,37 @@
 /* MENU */
 document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname.split("/").pop(); // Obté el nom del fitxer actual
     const menu = `
         <nav>
             <ul>
-                <li><a href="termsofuse?lang=${getLanguage()}" data-translate="termsofuse_title">termsofuse</a></li>
+                <li><a href="termsofuse.html?lang=${getLanguage()}" data-translate="termsofuse_title">termsofuse</a></li>
                 <li><a href="comunity.html?lang=${getLanguage()}" data-translate="comunity_title">comunity</a></li>
                 <li><a href="content.html?lang=${getLanguage()}" data-translate="content_title">content</a></li>
                 <li><a href="brand.html?lang=${getLanguage()}" data-translate="brand_title">brand</a></li>
-                <li><a href="cookies?lang=${getLanguage()}" data-translate="cookies_title">cookies</a></li>
-                <li><a href="misuse?lang=${getLanguage()}" data-translate="misuse_title">misuse</a></li>
-                <li><a href="music?lang=${getLanguage()}" data-translate="music_title">music</a></li>
-                <li><a href="pricavity?lang=${getLanguage()}" data-translate="pricavity_title">privacity</a></li>
-                <li><a href="promotedpost?lang=${getLanguage()}" data-translate="promotedpost_title">promotedpost</a></li>
-                <li><a href="delete-account?lang=${getLanguage()}" data-translate="delete-account_title">delete-account</a></li>
-                <li><a href="safety?lang=${getLanguage()}" data-translate="safety_title">safety</a></li>
+                <li><a href="cookies.html?lang=${getLanguage()}" data-translate="cookies_title">cookies</a></li>
+                <li><a href="misuse.html?lang=${getLanguage()}" data-translate="misuse_title">misuse</a></li>
+                <li><a href="music.html?lang=${getLanguage()}" data-translate="music_title">music</a></li>
+                <li><a href="privacity.html?lang=${getLanguage()}" data-translate="privacity_title">privacity</a></li>
+                <li><a href="promotedposts.html?lang=${getLanguage()}" data-translate="promotedposts_title">promotedposts</a></li>
+                <li><a href="delete-account.html?lang=${getLanguage()}" data-translate="delete-account_title">delete-account</a></li>
+                <li><a href="safety.html?lang=${getLanguage()}" data-translate="safety_title">safety</a></li>
             </ul>
         </nav>
     `;
     document.getElementById("menu").innerHTML = menu;
+    document.getElementById("menu2").innerHTML = menu;
+
+    // Afegim la classe "active" al menú actiu
+    document.querySelectorAll("#menu nav ul li a").forEach(link => {
+        if (link.getAttribute("href").split("?")[0] === currentPath) {
+            link.parentElement.classList.add("active");
+        }
+    });
+    document.querySelectorAll("#menu2 nav ul li a").forEach(link => {
+        if (link.getAttribute("href").split("?")[0] === currentPath) {
+            link.parentElement.classList.add("active");
+        }
+    });
 });
 /* LOGO */
 document.addEventListener("DOMContentLoaded", function () {
