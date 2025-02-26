@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><a href="music.html?lang=${getLanguage()}" data-translate="music_title">music</a></li>
                 <li><a href="privacity.html?lang=${getLanguage()}" data-translate="privacity_title">privacity</a></li>
                 <li><a href="promotedposts.html?lang=${getLanguage()}" data-translate="promotedposts_title">promotedposts</a></li>
+                <li><a href="promotedoffers.html?lang=${getLanguage()}" data-translate="promotedoffers_title">promotedoffers</a></li>
                 <li><a href="delete-account.html?lang=${getLanguage()}" data-translate="delete-account_title">delete-account</a></li>
                 <li><a href="safety.html?lang=${getLanguage()}" data-translate="safety_title">safety</a></li>
             </ul>
